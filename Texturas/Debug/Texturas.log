@@ -1,0 +1,19 @@
+﻿  Texturas.cpp
+c:\users\top\desktop\texturas\texturas.cpp(204): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\top\desktop\texturas\texturas.cpp(573): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\top\desktop\texturas\texturas.cpp(575): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\top\desktop\texturas\texturas.cpp(577): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\top\desktop\texturas\texturas.cpp(579): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\top\desktop\texturas\texturas.cpp(593): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\top\desktop\texturas\texturas.cpp(595): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\top\desktop\texturas\texturas.cpp(597): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\top\desktop\texturas\texturas.cpp(599): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\top\desktop\texturas\texturas.cpp(635): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\top\desktop\texturas\texturas.cpp(645): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\top\desktop\texturas\texturas.cpp(665): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+c:\users\top\desktop\texturas\texturas.cpp(790): warning C4102: 'sa3': etiqueta sin referencia
+c:\users\top\desktop\texturas\texturas.cpp(805): warning C4102: 'fuera': etiqueta sin referencia
+c:\users\top\desktop\texturas\texturas.cpp(830): warning C4102: 'sig': etiqueta sin referencia
+c:\users\top\desktop\texturas\texturas.cpp(985): warning C4305: 'argumento': truncamiento de 'double' a 'GLclampf'
+  Texturas.vcxproj -> C:\Users\TOP\Desktop\Texturas\Debug\Texturas.exe
+  Texturas.vcxproj -> C:\Users\TOP\Desktop\Texturas\Debug\Texturas.pdb (Full PDB)

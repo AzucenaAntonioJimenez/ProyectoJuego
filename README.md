@@ -43,9 +43,9 @@ Para ejecutar el proyecto siga los siguientes pasos:
 
 ## Autores
 
--- Antonio Jiménez Azucena
--- Antonio López Lizeth
--- León Pérez Leandro
+- Antonio Jiménez Azucena
+- Antonio López Lizeth
+- León Pérez Leandro
 
    [Freeglut]: <http://freeglut.sourceforge.net/>
    [OpenGL]: <http://www.opengl.org/>

@@ -8,12 +8,12 @@ c:\users\top\desktop\texturas\texturas.cpp(593): warning C4305: 'argumento': tru
 c:\users\top\desktop\texturas\texturas.cpp(595): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
 c:\users\top\desktop\texturas\texturas.cpp(597): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
 c:\users\top\desktop\texturas\texturas.cpp(599): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-c:\users\top\desktop\texturas\texturas.cpp(635): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-c:\users\top\desktop\texturas\texturas.cpp(645): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-c:\users\top\desktop\texturas\texturas.cpp(665): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-c:\users\top\desktop\texturas\texturas.cpp(790): warning C4102: 'sa3': etiqueta sin referencia
-c:\users\top\desktop\texturas\texturas.cpp(805): warning C4102: 'fuera': etiqueta sin referencia
-c:\users\top\desktop\texturas\texturas.cpp(830): warning C4102: 'sig': etiqueta sin referencia
-c:\users\top\desktop\texturas\texturas.cpp(985): warning C4305: 'argumento': truncamiento de 'double' a 'GLclampf'
+c:\users\top\desktop\texturas\texturas.cpp(626): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\top\desktop\texturas\texturas.cpp(636): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+c:\users\top\desktop\texturas\texturas.cpp(656): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+c:\users\top\desktop\texturas\texturas.cpp(781): warning C4102: 'sa3': etiqueta sin referencia
+c:\users\top\desktop\texturas\texturas.cpp(796): warning C4102: 'fuera': etiqueta sin referencia
+c:\users\top\desktop\texturas\texturas.cpp(821): warning C4102: 'sig': etiqueta sin referencia
+c:\users\top\desktop\texturas\texturas.cpp(976): warning C4305: 'argumento': truncamiento de 'double' a 'GLclampf'
   Texturas.vcxproj -> C:\Users\TOP\Desktop\Texturas\Debug\Texturas.exe
   Texturas.vcxproj -> C:\Users\TOP\Desktop\Texturas\Debug\Texturas.pdb (Full PDB)

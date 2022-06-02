@@ -1,4 +1,5 @@
 ﻿// Texturas.cpp: define el punto de entrada de la aplicación de consola.
+// Antonio Jimenez Azucena, Antonio López Lizeth y León Pérez Leandro
 //
 #include "stdafx.h"
 #include <Windows.h>
@@ -143,7 +144,6 @@ static int cuadros[24][27] = {
 	{ 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1 } };
 static int posz = 34, posx = 41;
 static int esferas[5][2];
-static int piezas[5] = { 0,0,0,0,0 };
 static int contador = 0;
 static int posiblesCuadros[22][2] = {
 	{ 38,35 },{ 35,33 },{ 40,33 },{ 36,30 },{ 36,31 },
@@ -201,7 +201,7 @@ void inline drawString(char* s)
 void inline drawString2(char* s1)
 {
 	unsigned int i;
-	glRasterPos3f(-0.12, 0.9, -1);  // move in 10 pixels from the left and bottom edges
+	glRasterPos3f(-0.12, 0.9, -1);  // Posicionar texto de puntos
 	for (i = 0; i < strlen(s1); i++)
 		glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, s1[i]);
 }
@@ -527,7 +527,7 @@ void mostrarcuadros()
 				}
 				else {
 
-					generarCubo(x, z); //genera los cubos de la pared
+					generarCubo(x, z); //genera,imp los cubos de la pared
 				}
 			}
 			if (cuadros[i][j] == 4)
@@ -602,6 +602,7 @@ void display(void) {
 
 	int x = -34, z = -41, i, j;
 
+	//Dibujar cajas 
 	for (i = 0; i < 72; i++)
 	{
 		for (j = 0; j < 81; j++)
@@ -609,21 +610,11 @@ void display(void) {
 			if (matriz[i][j] == 3)
 			{
 				glColor3d(0.6, 0.6, 0.6);
-				generarObstaculo(x, z); //genera los obstaculos
+
+				generarObstaculo(x, z); //Genera los obstaculos
 
 			}
-			if (matriz[i][j] == 5)
-			{
-				glColor3d(0.6, 0.6, 0.6);
-				generarObstaculo(x, z); //genera los obstaculos
 
-			}
-			if (matriz[i][j] == 6)
-			{
-				glColor3d(0.6, 0.6, 0.6);
-				generarObstaculo(x, z); //genera los obstaculos
-
-			}
 			x = x + 1;
 		}
 		z = z + 1;
@@ -720,7 +711,7 @@ void reiniciar() {
 	posz = 34, posx = 41;
 	texto = "COME TANTOS OBSTACULOS COMO PUEDAS EN 30 SEGUNDOS";
 	puntos = 0;
-	genesferas();
+	genesferas(); //nuevos obstaculos
 }
 
 
@@ -782,7 +773,7 @@ static void key(unsigned char key, int x, int y)
 
 	case 'w':
 		texto = " ";
-		//Avanzar hacia adelante
+		//Avanzar hacia adelante y comer
 
 		_asm { CMP key, 'w'
 		JNE fin
@@ -957,12 +948,12 @@ static void key(unsigned char key, int x, int y)
 static void idle(void)
 {
 	glutPostRedisplay();
-	t1 = clock() - t1;
-	if ((int(t1) / CLOCKS_PER_SEC) == (20 * multiplo)) {
-		//muestra cuandoo se termina el tiempo del temporizador
-		texto = "FIN DEL JUEGO.";
+	t1 = clock() - t1; //tiempo trascurrido del procesador
+	if ((int(t1) / CLOCKS_PER_SEC) == (20 * multiplo)) { //Convierte en segundos y compara limite de tiempo multiplo de 20 
+														 //muestra cuandoo se termina el tiempo
+		texto = "GAME OVER";
 		display();
-		Sleep(3000);
+		Sleep(5000);
 		multiplo++; //Sumando 20-20 para comparar que sea multiplo de 20
 					//Reinia el juego
 		reiniciar();
@@ -970,7 +961,7 @@ static void idle(void)
 	}
 }
 int main(int argc, char** argv) {
-	t1 = clock();
+	t1 = clock(); //Inicio del tiempo del procesador
 	genesferas();
 	glutInit(&argc, argv);
 	glutInitWindowSize(1900, 5000);
